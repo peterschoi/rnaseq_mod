@@ -313,9 +313,9 @@ def validateInputParameters() {
 
     // Checks when running --aligner star_rsem
     if (!params.skip_alignment && params.aligner == 'star_rsem') {
-        if (params.with_umi) {
-            rsemUmiError()
-        }
+        //if (params.with_umi) {
+        //    rsemUmiError()
+        //}
         if (params.rsem_index && params.star_index) {
             rsemStarIndexWarn()
         }
