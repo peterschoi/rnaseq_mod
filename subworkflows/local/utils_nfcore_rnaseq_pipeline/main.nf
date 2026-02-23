@@ -546,8 +546,8 @@ def skipAlignmentWarn() {
 }
 
 //
-// Print a warning if using '--aligner star_rsem' and '--with_umi'
-//
+// Print a warning if using '--aligner star_rsem' and '--with_umi' (removed in dev branch)
+/*
 def rsemUmiError() {
     def error_string = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" +
         "  When using '--aligner star_rsem', STAR is run by RSEM itself and so it is\n" +
@@ -557,7 +557,7 @@ def rsemUmiError() {
         "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     error(error_string)
 }
-
+*/
 //
 // Print a warning if using '--aligner star_rsem' and providing both '--rsem_index' and '--star_index'
 //
